@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Web3 Wallets" icon-name="custom:custom95">
+        <div class="slds-p-around_medium">
+            <!-- Existing Wallets -->
+            <template if:true={loaded}>
+                <template for:each={wallets} for:item="wallet">
+                    <div key={wallet.Id} class="slds-box slds-m-bottom_small slds-box-item">
+                        <h3>{wallet.Address__c}</h3>
+                        <ul>
+                            <template for:each={wallet.WalletBalance__r} for:item="balance">
+                                <li key={balance.Id}>
+                                    {balance.Blockchain__c}:  {balance.Amount__c}
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+            </template>
+            <template if:false={loaded}>
+                <lightning-spinner variant="brand" alternative-text="Loading"></lightning-spinner>
+            </template>
+            <!-- Add New Wallet -->
+            <div class="slds-box">
+                <lightning-input type="text" required label="Wallet Address" name="newWalletAddress" value={newWalletAddress} onchange={handleInputChange}></lightning-input>
+                <lightning-button label="Add Wallet" onclick={addWallet}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>
