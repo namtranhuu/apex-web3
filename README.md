@@ -5,7 +5,7 @@ This project demonstrates how to connect Web3 data to Salesforce objects (Accoun
 ## Manually create metadata types for the app config
 [Custom metadata Types](https://trailhead.salesforce.com/content/learn/modules/custom_metadata_types_dec/cmt_create)
 
-![Create Custom Metadata](https://github.com/namtranhuu/apex-web3/blob/main/create-custom-metadata-types.png?raw=true)
+![Create Custom Metadata](https://github.com/namtranhuu/apex-web3/blob/main/docs/create-custom-metadata-types.png?raw=true)
 
 ## Installing the app using a Scratch Org
 
@@ -81,14 +81,14 @@ If you are setting up a Developer Edition: go to **Setup**, under **Platform Cac
 
 [You can get API key here](https://www.infura.io/)
 
-![Create Custom Metadata](https://github.com/namtranhuu/apex-web3/blob/main/api_keys.png?raw=true)
+![Create Custom Metadata](https://github.com/namtranhuu/apex-web3/blob/main/docs/api_keys.png?raw=true)
 
 ## Add remote sites to allow requests sent to infura API endpoint
 
-![Remote Sites](https://github.com/namtranhuu/apex-web3/blob/main/remote-sites.png?raw=true)
+![Remote Sites](https://github.com/namtranhuu/apex-web3/blob/main/docs/remote-sites.png?raw=true)
 
 ## Edit Contact,Lead,Account page tempaltes. Add Web3 Container
 
-![Edit Page Template](https://github.com/namtranhuu/apex-web3/blob/main/edit-page-template.png?raw=true)
+![Edit Page Template](https://github.com/namtranhuu/apex-web3/blob/main/docs/edit-page-template.png?raw=true)
 
-![Add Web3 Container](https://github.com/namtranhuu/apex-web3/blob/main/web3Container.png?raw=true)
+![Add Web3 Container](https://github.com/namtranhuu/apex-web3/blob/main/docs/web3Container.png?raw=true)
